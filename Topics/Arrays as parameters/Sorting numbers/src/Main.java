@@ -5,6 +5,18 @@ public class Main {
 
     public static void sort(int[] numbers) {
         // write your code here
+        boolean isSorted = false;
+        while (!isSorted) {
+            isSorted = true;
+            for (int i = 0; i < numbers.length - 1; i++) {
+                if (numbers[i] > numbers[i + 1]) {
+                    isSorted = false;
+                    int temp = numbers[i];
+                    numbers[i] = numbers[i + 1];
+                    numbers[i + 1] = temp;
+                }
+            }
+        }
     }
 
     /* Do not change code below */
