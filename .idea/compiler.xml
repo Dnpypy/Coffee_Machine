@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="17">
+      <module name="Coffee_Machine.Coffee_Machine-task.main" target="11" />
+      <module name="Coffee_Machine.Topics-Arrays_as_parameters-Adding_values.main" target="11" />
+      <module name="Coffee_Machine.Topics-Arrays_as_parameters-Application_as_a_class.main" target="11" />
+      <module name="Coffee_Machine.Topics-Arrays_as_parameters-Get_first_and_last_elements.main" target="11" />
+      <module name="Coffee_Machine.Topics-Arrays_as_parameters-Inverse_boolean_flags.main" target="11" />
+      <module name="Coffee_Machine.Topics-Arrays_as_parameters-Sorting_numbers.main" target="11" />
+      <module name="Coffee_Machine.Topics-Arrays_as_parameters-Theory.main" target="11" />
+      <module name="Coffee_Machine.util.main" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
