@@ -5,7 +5,7 @@ subprojects {
     apply plugin: 'java'
 
     def userJava = Integer.parseInt(JavaVersion.current().getMajorVersion())
-    def hsJava = Integer.parseInt("17")
+    def hsJava = Integer.parseInt(hs.java.version)
     def testJava = Math.max(userJava, hsJava)
 
     java.toolchain.languageVersion = JavaLanguageVersion.of(testJava)
