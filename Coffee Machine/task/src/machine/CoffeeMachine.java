@@ -3,101 +3,112 @@ package machine;
 import java.util.Scanner;
 
 public class CoffeeMachine {
-
     /**
      * class variables
      */
-    private static final Scanner SC = new Scanner(System.in);
-    private static final int WATER_CUP = 200;
-    private static final int MILK_CUP = 50;
-    private static final int COFFEE_BEANS_CUP = 15;
-
-    /**
-     * instance variables
-     */
-    private final int[] arrCoffee = new int[4];
-    final int water;
-    final int milk;
-    final int coffeeBeans;
-    private final int needCoffee;
-    private int canCups = Integer.MAX_VALUE;
-
-    /**
-     * constructor class CoffeeMachine
-     * @param water inc water value
-     * @param milk int milk value
-     * @param coffeeBeans inc coffeeBeans value
-     * @param needCoffee int needCoffee value
-     */
-    public CoffeeMachine(int water, int milk, int coffeeBeans, int needCoffee) {
-        this.water = water;
-        this.milk = milk;
-        this.coffeeBeans = coffeeBeans;
-        this.needCoffee = needCoffee;
-    }
+    static final Scanner SC = new Scanner(System.in);
+    static String menu;
+    static int money = 550;
+    static int water = 400;
+    static int milk  = 540;
+    static int coffeeBeans = 120;
+    static int disposableCups = 9;
 
     /**
      * main method
      * @param args ....
      */
     public static void main(String[] args) {
-
-        System.out.println("Write how many ml of water the coffee machine has:");
-        int w = SC.nextInt();
-
-        System.out.println("Write how many ml of milk the coffee machine has: ");
-        int m = SC.nextInt();
-
-        System.out.println("Write how many grams of coffee beans the coffee machine has: ");
-        int cb = SC.nextInt();
-
-        System.out.println("Write how many cups of coffee you will need: ");
-        int nC = SC.nextInt();
-
-        CoffeeMachine coffeeMachine = new CoffeeMachine(w, m, cb, nC);
-        coffeeMachine.takesNumberIngridients(w, m, cb, nC);
-        coffeeMachine.minIngridients();
-        coffeeMachine.outputMakeCoffee();
-
-    }
-
-    /**
-     * instance method
-     * output variant make coffee
-     */
-    void outputMakeCoffee() {
-        if (canCups == needCoffee) {
-            System.out.println("Yes, I can make that amount of coffee");
-        } else if (canCups > needCoffee) {
-            System.out.println("Yes, I can make that amount of coffee (ancups even " + (canCups - needCoffee)+ " more than that)");
-        } else {
-            System.out.println("No, I can make only " + canCups + " cup(s) of coffee");
+        barCoffeeStatus();
+        menuBarCoffee();
+        switch (menu) {
+            case ("buy"):
+                barDrinks();
+                break;
+            case ("fill"):
+                addStocksBarCoffee();
+                break;
+            case ("take"):
+                takeIncomeMoney();
         }
+        barCoffeeStatus();
     }
 
     /**
-     * instance method
-     * counting minimum ingridients
+     * take money
+     * @value money = 0
      */
-
-    void minIngridients() {
-        canCups = arrCoffee[0];
-        canCups = canCups < arrCoffee[1] ? (Math.min(canCups, arrCoffee[2])) : (Math.min(arrCoffee[1], arrCoffee[2]));
+    static void takeIncomeMoney() {
+        System.out.println("I gave you " + money + "$");
+        money = 0;
     }
 
     /**
-     * instance method
-     * @param a takes the number of water
-     * @param b takes the number of milk
-     * @param c takes the number of coffee beans
-     * @param cups how many cups of coffee
+     * adding ingredients to the stock
+     * @value water, milk, coffeeBeans, coffeeBeans
      */
-
-    void takesNumberIngridients(int a, int b, int c, int cups) {
-        arrCoffee[0] = a / WATER_CUP;
-        arrCoffee[1] = b / MILK_CUP;
-        arrCoffee[2] = c / COFFEE_BEANS_CUP;
-        arrCoffee[3] = cups;
+    static void addStocksBarCoffee() {
+        System.out.println("Write how many ml of water you want to add:");
+        water += SC.nextInt();
+        System.out.println("Write how many ml of milk you want to add:");
+        milk += SC.nextInt();
+        System.out.println("Write how many grams of coffee beans you want to add:");
+        coffeeBeans += SC.nextInt();
+        System.out.println("Write how many disposable cups of coffee you want to add:");
+        disposableCups += SC.nextInt();
     }
+
+    /**
+     * menu bar
+     * @value menu takes a string
+     */
+    static void menuBarCoffee() {
+        System.out.println("Write action (buy, fill, take):");
+        menu = SC.next();
+    }
+
+    /**
+     * menu drinks
+     * ingridients, moneys, add or subtract
+     * @value drink takes a number drink
+     */
+    static void barDrinks() {
+        System.out.println("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino: ");
+        var drink = SC.nextInt();
+        switch(drink){
+            case (1):
+                water -= 250;
+                coffeeBeans -= 16;
+                money += 4;
+                break;
+            case (2):
+                water -= 350;
+                milk -= 75;
+                coffeeBeans -= 20;
+                money += 7;
+                break;
+            case (3):
+                water -= 200;
+                milk -= 100;
+                coffeeBeans -= 12;
+                money += 6;
+                break;
+            default :
+        }
+        disposableCups--;
+    }
+
+    /**
+     * output status bar
+     */
+    static void barCoffeeStatus() {
+        System.out.println("\nThe coffee machine has:");
+        System.out.println(water + " ml of water");
+        System.out.println(milk + " ml of milk");
+        System.out.println(coffeeBeans + " g of coffee beans");
+        System.out.println(disposableCups + " disposable cups");
+        System.out.println(money + "$ of money\n");
+    }
+
 
 }
