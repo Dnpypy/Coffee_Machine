@@ -288,6 +288,12 @@ files:
         }
     }
   learner_created: false
+- name: src/machine/Fddd.java
+  visible: true
+  learner_created: true
+- name: src/machine/Fddsdsdsd.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/33/stages/179/implement#comment
 status: Failed
 feedback:

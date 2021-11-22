@@ -116,7 +116,6 @@ public class CoffeeMachine {
                     coffeeBeans -= 16;
                     money += 4;
                 }
-
                 break;
             case ("2"):
                 if (strIngridient != "") {
@@ -149,9 +148,7 @@ public class CoffeeMachine {
         disposableCups--;
     }
 
-    /**
-     *
-     */
+
     /**
      * output status bar
      */
