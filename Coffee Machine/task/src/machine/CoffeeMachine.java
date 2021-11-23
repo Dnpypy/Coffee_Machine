@@ -13,8 +13,7 @@ public class CoffeeMachine {
     static int milk  = 540;
     static int coffeeBeans = 120;
     static int disposableCups = 9;
-    static String strIngridient = "";
-
+    
     /**
      * main method
      * @param args ....
@@ -29,7 +28,6 @@ public class CoffeeMachine {
             switch (menu) {
                 case ("buy"):
                     barDrinks();
-                    checkIngridients();
                     break;
                 case ("fill"):
                     addStocksBarCoffee();
@@ -48,20 +46,15 @@ public class CoffeeMachine {
     }
 
     /**
-     * checking the number of ingredients in the warehouse
-     * return strIngridient String
+     * output status bar
      */
-    static String checkIngridients() {
-        if (water < 400) {
-            strIngridient = "Sorry, not enough water!";
-        } else if (milk < 540) {
-            strIngridient = "Sorry, not enough milk!";
-        } else if (coffeeBeans < 120) {
-            strIngridient = "Sorry, not enough coffeeBeans!";
-        } else if (disposableCups < 9) {
-            strIngridient = "Sorry, not enough disposableCups!" ;
-        }
-        return strIngridient;
+    static void barCoffeeStatus () {
+        System.out.println("\nThe coffee machine has:");
+        System.out.println(water + " ml of water");
+        System.out.println(milk + " ml of milk");
+        System.out.println(coffeeBeans + " g of coffee beans");
+        System.out.println(disposableCups + " disposable cups");
+        System.out.println(money + "$ of money");
     }
 
     /**
@@ -97,69 +90,82 @@ public class CoffeeMachine {
         menu = SC.next();
     }
 
+
+    /**
+     * canMakeCoffee
+     * @value canMakeCoffee
+     */
+    static boolean canMakeCoffee(int waterNeed, int milkNeed, int beansNeed) {
+        if (water >= waterNeed) {
+            if (milk >= milkNeed) {
+                if (coffeeBeans >= beansNeed) {
+                    System.out.println("I have enough resources, making you a coffee!\n");
+                    return true;
+                } else {
+                    System.out.println("Sorry, not enough beans!");
+                    return false;
+                }
+
+            } else {
+                System.out.println("Sorry, not enough milk!");
+                return false;
+            }
+        } else {
+            System.out.println("Sorry, not enough water!");
+            return false;
+        }
+    }
+
     /**
      * menu drinks
-     * ingridients, moneys, add or subtract
+     * ingridients, moneys, add, subtract or back menu
      * @value drink takes a number drink
      */
     static void barDrinks() {
         System.out.println("\nWhat do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, , back - to main menu:");
-
         var drink = SC.next();
-        switch(drink){
-            case ("1"):
-                if (strIngridient != "") {
-                    System.out.println(strIngridient);
-                } else {
-                    System.out.println("I have enough resources, making you a coffee!");
+        switch (drink) {
+            case "1": {
+                if (canMakeCoffee(250, 0, 16)) {
                     water -= 250;
                     coffeeBeans -= 16;
+                    disposableCups--;
                     money += 4;
+                    break;
                 }
-                break;
-            case ("2"):
-                if (strIngridient != "") {
-                    System.out.println(strIngridient);
-                } else {
-                    System.out.println("I have enough resources, making you a coffee!");
+            }
+            case "2": {
+                if (canMakeCoffee(350, 75, 20)) {
                     water -= 350;
                     milk -= 75;
                     coffeeBeans -= 20;
+                    disposableCups--;
                     money += 7;
+                    break;
                 }
-                break;
-            case ("3"):
-                if (strIngridient != "") {
-                    System.out.println(strIngridient);
-                } else {
-                    System.out.println("I have enough resources, making you a coffee!");
+            }
+            case "3": {
+                if (canMakeCoffee(200, 100, 12)) {
                     water -= 200;
                     milk -= 100;
                     coffeeBeans -= 12;
+                    disposableCups--;
                     money += 6;
+                    break;
+
                 }
+
+            }
+            case "back": {
                 break;
-            case ("back"):
+            }
+            default: {
                 break;
-            default :
-                break;
+            }
         }
 
-        disposableCups--;
+
+
+
     }
-
-
-    /**
-     * output status bar
-     */
-    static void barCoffeeStatus() {
-        System.out.println("\nThe coffee machine has:");
-        System.out.println(water + " ml of water");
-        System.out.println(milk + " ml of milk");
-        System.out.println(coffeeBeans + " g of coffee beans");
-        System.out.println(disposableCups + " disposable cups");
-        System.out.println(money + "$ of money");
-    }
-
-
 }
