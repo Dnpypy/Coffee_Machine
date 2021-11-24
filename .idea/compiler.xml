@@ -15,6 +15,9 @@
       <module name="Coffee_Machine.Topics-Arrays_as_parameters-Inverse_boolean_flags.main" target="11" />
       <module name="Coffee_Machine.Topics-Arrays_as_parameters-Sorting_numbers.main" target="11" />
       <module name="Coffee_Machine.Topics-Arrays_as_parameters-Theory.main" target="11" />
+      <module name="Coffee_Machine.Topics-Defining_classes-Inner_boxes.main" target="11" />
+      <module name="Coffee_Machine.Topics-Defining_classes-Points_on_the_2D_plane.main" target="11" />
+      <module name="Coffee_Machine.Topics-Defining_classes-Theory.main" target="11" />
       <module name="Coffee_Machine.Topics-Iterating_over_arrays-Alphabetical_order.main" target="11" />
       <module name="Coffee_Machine.Topics-Iterating_over_arrays-Boxes.main" target="11" />
       <module name="Coffee_Machine.Topics-Iterating_over_arrays-Check_if_an_array_contains_two_numbers.main" target="11" />
@@ -32,6 +35,18 @@
       <module name="Coffee_Machine.Topics-Iterating_over_arrays-Theory.main" target="11" />
       <module name="Coffee_Machine.Topics-Iterating_over_arrays-Triples.main" target="11" />
       <module name="Coffee_Machine.Topics-Iterating_over_arrays-Two_numbers_never_occur_next_to_each_other.main" target="11" />
+      <module name="Coffee_Machine.Topics-Multidimensional_array-Cinema.main" target="11" />
+      <module name="Coffee_Machine.Topics-Multidimensional_array-Create_cube.main" target="11" />
+      <module name="Coffee_Machine.Topics-Multidimensional_array-Fill_the_matrix_by_numbers.main" target="11" />
+      <module name="Coffee_Machine.Topics-Multidimensional_array-Find_the_corners.main" target="11" />
+      <module name="Coffee_Machine.Topics-Multidimensional_array-Maximum_element_in_a_matrix.main" target="11" />
+      <module name="Coffee_Machine.Topics-Multidimensional_array-Reverse_elements.main" target="11" />
+      <module name="Coffee_Machine.Topics-Multidimensional_array-Rotate_a_rectangle_array.main" target="11" />
+      <module name="Coffee_Machine.Topics-Multidimensional_array-Swap_the_columns.main" target="11" />
+      <module name="Coffee_Machine.Topics-Multidimensional_array-Symmetric_matrix.main" target="11" />
+      <module name="Coffee_Machine.Topics-Multidimensional_array-The_star_figure.main" target="11" />
+      <module name="Coffee_Machine.Topics-Multidimensional_array-The_third_row.main" target="11" />
+      <module name="Coffee_Machine.Topics-Multidimensional_array-Theory.main" target="11" />
       <module name="Coffee_Machine.util.main" target="11" />
     </bytecodeTargetLevel>
   </component>

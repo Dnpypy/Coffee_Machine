@@ -2,6 +2,12 @@ package machine;
 
 import java.util.Scanner;
 
+/**
+ * @author User 143077307
+ * @since 23.11.2021 16:52
+ */
+
+
 public class CoffeeMachine {
     /**
      * class variables
@@ -13,19 +19,17 @@ public class CoffeeMachine {
     static int milk  = 540;
     static int coffeeBeans = 120;
     static int disposableCups = 9;
-    
+
     /**
      * main method
      * @param args ....
      */
 
     public static void main(String[] args) {
-
         boolean t = true;
         while (t) {
-            menuBarCoffee();
-
-            switch (menu) {
+             menuBarCoffee();
+             switch (menu) {
                 case ("buy"):
                     barDrinks();
                     break;
@@ -90,10 +94,8 @@ public class CoffeeMachine {
         menu = SC.next();
     }
 
-
     /**
-     * canMakeCoffee
-     * @value canMakeCoffee
+     * comparison of ingredients that are needed with which in stock
      */
     static boolean canMakeCoffee(int waterNeed, int milkNeed, int beansNeed) {
         if (water >= waterNeed) {
@@ -154,7 +156,6 @@ public class CoffeeMachine {
                     break;
 
                 }
-
             }
             case "back": {
                 break;
@@ -163,9 +164,6 @@ public class CoffeeMachine {
                 break;
             }
         }
-
-
-
 
     }
 }
