@@ -16,14 +16,17 @@
       <module name="Coffee_Machine.Topics-Arrays_as_parameters-Sorting_numbers.main" target="11" />
       <module name="Coffee_Machine.Topics-Arrays_as_parameters-Theory.main" target="11" />
       <module name="Coffee_Machine.Topics-Constructor-Book.main" target="11" />
+      <module name="Coffee_Machine.Topics-Constructor-Complex_numbers.main" target="11" />
       <module name="Coffee_Machine.Topics-Constructor-Geometric_cube.main" target="11" />
       <module name="Coffee_Machine.Topics-Constructor-Theory.main" target="11" />
+      <module name="Coffee_Machine.Topics-Constructor-User.main" target="11" />
       <module name="Coffee_Machine.Topics-Defining_classes-Inner_boxes.main" target="11" />
       <module name="Coffee_Machine.Topics-Defining_classes-Points_on_the_2D_plane.main" target="11" />
       <module name="Coffee_Machine.Topics-Defining_classes-Theory.main" target="11" />
       <module name="Coffee_Machine.Topics-Iterating_over_arrays-Alphabetical_order.main" target="11" />
       <module name="Coffee_Machine.Topics-Iterating_over_arrays-Boxes.main" target="11" />
       <module name="Coffee_Machine.Topics-Iterating_over_arrays-Check_if_an_array_contains_two_numbers.main" target="11" />
+      <module name="Coffee_Machine.Topics-Iterating_over_arrays-Check_if_an_array_is_sorted_ascending.main" target="11" />
       <module name="Coffee_Machine.Topics-Iterating_over_arrays-Count_how_many_times_a_number_occurs.main" target="11" />
       <module name="Coffee_Machine.Topics-Iterating_over_arrays-Cyclically_shifting_elements.main" target="11" />
       <module name="Coffee_Machine.Topics-Iterating_over_arrays-Does_an_array_contain_N.main" target="11" />
