@@ -20,9 +20,13 @@
       <module name="Coffee_Machine.Topics-Constructor-Geometric_cube.main" target="11" />
       <module name="Coffee_Machine.Topics-Constructor-Theory.main" target="11" />
       <module name="Coffee_Machine.Topics-Constructor-User.main" target="11" />
+      <module name="Coffee_Machine.Topics-Defining_classes-Books.main" target="11" />
       <module name="Coffee_Machine.Topics-Defining_classes-Inner_boxes.main" target="11" />
       <module name="Coffee_Machine.Topics-Defining_classes-Points_on_the_2D_plane.main" target="11" />
       <module name="Coffee_Machine.Topics-Defining_classes-Theory.main" target="11" />
+      <module name="Coffee_Machine.Topics-Instance_methods-Car.main" target="11" />
+      <module name="Coffee_Machine.Topics-Instance_methods-Complex_numbers.main" target="11" />
+      <module name="Coffee_Machine.Topics-Instance_methods-Theory.main" target="11" />
       <module name="Coffee_Machine.Topics-Iterating_over_arrays-Alphabetical_order.main" target="11" />
       <module name="Coffee_Machine.Topics-Iterating_over_arrays-Boxes.main" target="11" />
       <module name="Coffee_Machine.Topics-Iterating_over_arrays-Check_if_an_array_contains_two_numbers.main" target="11" />
