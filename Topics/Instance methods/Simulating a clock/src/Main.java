@@ -6,13 +6,13 @@ class Clock {
 
     void next() {
         if (minutes == 59 && hours == 12) {
-            this.hours = 1;
-            this.minutes = 0;
+            hours = 1;
+            minutes = 0;
         } else if (minutes == 59) {
-            this.hours += 1;
-            this.minutes = 0;
+            hours += 1;
+            minutes = 0;
         } else {
-            this.minutes += 1;
+            minutes += 1;
         }
     }
 }

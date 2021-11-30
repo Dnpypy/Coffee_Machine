@@ -59,6 +59,8 @@
       <module name="Coffee_Machine.Topics-Multidimensional_array-The_star_figure.main" target="11" />
       <module name="Coffee_Machine.Topics-Multidimensional_array-The_third_row.main" target="11" />
       <module name="Coffee_Machine.Topics-Multidimensional_array-Theory.main" target="11" />
+      <module name="Coffee_Machine.Topics-Objects-Army.main" target="11" />
+      <module name="Coffee_Machine.Topics-Objects-Theory.main" target="11" />
       <module name="Coffee_Machine.util.main" target="11" />
     </bytecodeTargetLevel>
   </component>
