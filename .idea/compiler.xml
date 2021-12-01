@@ -29,6 +29,7 @@
       <module name="Coffee_Machine.Topics-Instance_methods-Complex_numbers.main" target="11" />
       <module name="Coffee_Machine.Topics-Instance_methods-Counter.main" target="11" />
       <module name="Coffee_Machine.Topics-Instance_methods-In_a_box.main" target="11" />
+      <module name="Coffee_Machine.Topics-Instance_methods-Patient_needs_a_doctor.main" target="11" />
       <module name="Coffee_Machine.Topics-Instance_methods-Simulating_a_clock.main" target="11" />
       <module name="Coffee_Machine.Topics-Instance_methods-Theory.main" target="11" />
       <module name="Coffee_Machine.Topics-Iterating_over_arrays-Alphabetical_order.main" target="11" />
@@ -63,7 +64,10 @@
       <module name="Coffee_Machine.Topics-Multidimensional_array-Theory.main" target="11" />
       <module name="Coffee_Machine.Topics-Objects-Army.main" target="11" />
       <module name="Coffee_Machine.Topics-Objects-Change_identities.main" target="11" />
+      <module name="Coffee_Machine.Topics-Objects-Preparing_full_name.main" target="11" />
       <module name="Coffee_Machine.Topics-Objects-Theory.main" target="11" />
+      <module name="Coffee_Machine.Topics-Static_members-Project_constants_and_methods.main" target="11" />
+      <module name="Coffee_Machine.Topics-Static_members-Theory.main" target="11" />
       <module name="Coffee_Machine.util.main" target="11" />
     </bytecodeTargetLevel>
   </component>
