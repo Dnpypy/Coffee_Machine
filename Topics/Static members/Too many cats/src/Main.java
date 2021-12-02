@@ -13,7 +13,8 @@ class Cat {
         this.age = age;
 
         counter++;
-        if (counter > 5) {
+        final int max = 5;
+        if (counter > max) {
             System.out.println("You have too many cats");
         }
     }
