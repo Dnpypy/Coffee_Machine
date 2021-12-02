@@ -68,6 +68,8 @@
       <module name="Coffee_Machine.Topics-Objects-Theory.main" target="11" />
       <module name="Coffee_Machine.Topics-Static_members-Project_constants_and_methods.main" target="11" />
       <module name="Coffee_Machine.Topics-Static_members-Theory.main" target="11" />
+      <module name="Coffee_Machine.Topics-Static_members-Time_constants.main" target="11" />
+      <module name="Coffee_Machine.Topics-Static_members-Too_many_cats.main" target="11" />
       <module name="Coffee_Machine.util.main" target="11" />
     </bytecodeTargetLevel>
   </component>
