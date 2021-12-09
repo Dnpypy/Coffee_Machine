@@ -20,19 +20,6 @@ public class CoffeeMachine {
     static int coffeeBeans = 120;
     static int disposableCups = 9;
 
-//    GeometricCuboid cuboid = new GeometricCuboid(width, height, length);
-//     System.out.println(cuboid.toString());
-//
-//     private int width;
-//    private int height;
-//    private int length;
-//
-//    public GeometricCuboid(int width, int height, int length) {
-//        this.width = width;
-//        this.height = height;
-//        this.length = length;
-//    }
-
     /**
      * main method
      * @param args ....
