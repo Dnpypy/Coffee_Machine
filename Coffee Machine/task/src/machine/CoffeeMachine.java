@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * @author User 143077307
- * @since 09.12.2021 18:01
+ * @since 09.12.2021 20:10
  */
 
 
@@ -20,33 +20,55 @@ public class CoffeeMachine {
     static int coffeeBeans = 120;
     static int disposableCups = 9;
 
+    enum Status {
+        CHOOSING, BUYING, FILLING, TAKING, REMAINING, EXITING
+    }
+
+    static Status currentStatus = Status.CHOOSING;
+
     /**
      * main method
      * @param args ....
      */
 
     public static void main(String[] args) {
-        boolean t = true;
-        while (t) {
+        do {
              menuBarCoffee();
              switch (menu) {
                 case ("buy"):
+                    changeStatus(Status.BUYING);
                     barDrinks();
                     break;
                 case ("fill"):
+                    changeStatus(Status.FILLING);
                     addStocksBarCoffee();
                     break;
                 case ("take"):
+                    changeStatus(Status.TAKING);
                     takeIncomeMoney();
                     break;
                 case ("remaining"):
+                    changeStatus(Status.REMAINING);
                     barCoffeeStatus();
                     break;
                 case ("exit"):
-                    t = false;
-            }
+                    exit();
+             }
+        } while (currentStatus != Status.EXITING);
+    }
 
-        }
+    /**
+     * @param value takes the current value - the status at the moment
+     */
+    static void changeStatus(Status value) {
+        currentStatus = value;
+    }
+
+    /**
+     * the exit method allows you to exit the main loop
+     */
+    static void exit() {
+        changeStatus(Status.EXITING);
     }
 
     /**
