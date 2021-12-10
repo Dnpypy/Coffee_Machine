@@ -288,10 +288,7 @@ files:
         }
     }
   learner_created: false
-- name: src/machine/CoffeeMachine$Status.class
-  visible: true
-  learner_created: true
-- name: src/machine/CoffeeMachine.class
+- name: src/machine/META-INF/MANIFEST.MF
   visible: true
   learner_created: true
 feedback_link: https://hyperskill.org/learn/step/5334#comment
@@ -299,5 +296,5 @@ status: Solved
 feedback:
   message: Well done! You've finished the project. Select a new project on <a href="https://hyperskill.org/projects">JetBrains
     Academy</a> to continue learning.
-  time: Thu, 09 Dec 2021 17:10:10 UTC
+  time: Thu, 09 Dec 2021 17:38:58 UTC
 record: -1

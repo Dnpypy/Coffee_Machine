@@ -15,6 +15,7 @@
       <module name="Coffee_Machine.Topics-Arrays_as_parameters-Inverse_boolean_flags.main" target="11" />
       <module name="Coffee_Machine.Topics-Arrays_as_parameters-Sorting_numbers.main" target="11" />
       <module name="Coffee_Machine.Topics-Arrays_as_parameters-Theory.main" target="11" />
+      <module name="Coffee_Machine.Topics-Constructor-Account.main" target="11" />
       <module name="Coffee_Machine.Topics-Constructor-Account_and_its_owner.main" target="11" />
       <module name="Coffee_Machine.Topics-Constructor-Book.main" target="11" />
       <module name="Coffee_Machine.Topics-Constructor-Complex_numbers.main" target="11" />
@@ -32,6 +33,8 @@
       <module name="Coffee_Machine.Topics-Enums_in_Java-Days_of_week.main" target="11" />
       <module name="Coffee_Machine.Topics-Enums_in_Java-Hidden_enumeration.main" target="11" />
       <module name="Coffee_Machine.Topics-Enums_in_Java-Theory.main" target="11" />
+      <module name="Coffee_Machine.Topics-Fields_and_methods_in_enum-Robot_control.main" target="11" />
+      <module name="Coffee_Machine.Topics-Fields_and_methods_in_enum-Theory.main" target="11" />
       <module name="Coffee_Machine.Topics-Instance_methods-Car.main" target="11" />
       <module name="Coffee_Machine.Topics-Instance_methods-Circle.main" target="11" />
       <module name="Coffee_Machine.Topics-Instance_methods-Complex_numbers.main" target="11" />
