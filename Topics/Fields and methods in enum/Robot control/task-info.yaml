@@ -102,9 +102,8 @@ files:
     }
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/11522#comment
-status: Failed
+status: Solved
 feedback:
-  message: |
-    Failed. Robot finished in wrong position (0,1). Target position is (10,0), starting position is (0,0), initial direction is UP
-  time: Fri, 10 Dec 2021 12:58:53 UTC
+  message: <html>Correct solution</html>
+  time: Fri, 10 Dec 2021 13:16:33 UTC
 record: -1
