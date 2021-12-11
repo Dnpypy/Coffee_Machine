@@ -10,6 +10,21 @@ public class Main {
      */
     public static boolean changeBalance(Account account, Operation operation, Long sum) {
         // write your implementation here
+        boolean flag = true;
+
+        if(operation == Operation.DEPOSIT) {
+            account.balance += sum;
+        } else if(operation == Operation.WITHDRAW) {
+            if(account.balance < sum) {
+                System.out.println("Not enough money to withdraw.");
+                flag = false;
+            } else {
+                account.balance -= sum;
+                flag = true;
+            }
+        }
+
+        return flag;
     }
 
     /* Do not change code below */
