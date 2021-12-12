@@ -78,6 +78,7 @@
       <module name="Coffee_Machine.Topics-Objects-Change_identities.main" target="11" />
       <module name="Coffee_Machine.Topics-Objects-Preparing_full_name.main" target="11" />
       <module name="Coffee_Machine.Topics-Objects-Theory.main" target="11" />
+      <module name="Coffee_Machine.Topics-Static_members-Detail_manufacturing.main" target="11" />
       <module name="Coffee_Machine.Topics-Static_members-Project_constants_and_methods.main" target="11" />
       <module name="Coffee_Machine.Topics-Static_members-Theory.main" target="11" />
       <module name="Coffee_Machine.Topics-Static_members-Time_constants.main" target="11" />

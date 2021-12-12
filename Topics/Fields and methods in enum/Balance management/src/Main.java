@@ -12,10 +12,10 @@ public class Main {
         // write your implementation here
         boolean flag = true;
 
-        if(operation == Operation.DEPOSIT) {
+        if (operation == Operation.DEPOSIT) {
             account.balance += sum;
-        } else if(operation == Operation.WITHDRAW) {
-            if(account.balance < sum) {
+        } else if (operation == Operation.WITHDRAW) {
+            if (account.balance < sum) {
                 System.out.println("Not enough money to withdraw.");
                 flag = false;
             } else {
